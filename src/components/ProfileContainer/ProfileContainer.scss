@@ -1,0 +1,16 @@
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > div{
+        margin: 0.4rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .profile-container{
+        justify-content: flex-start;
+    }
+}

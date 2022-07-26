@@ -1,8 +1,8 @@
 import "./ProfileCard.scss";
 
-const ProfileCard = ({ name, image, email, phoneNumber }) => {
+const ProfileCard = ({ name, image, email, phoneNumber, keyVal }) => {
   return (
-    <div className="profile-card">
+    <div key={keyVal} className="profile-card">
       <img className="profile-card__image" src={image} alt={name} />
       <div className="profile-card__content">
         <h2 className="profile-card__heading">{name}</h2>
